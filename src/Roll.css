@@ -75,6 +75,7 @@
     flex-direction: row;
     justify-content: center;
     margin: 10px;
+    margin-bottom: 50px;
     align-items: stretch;
   }
   
