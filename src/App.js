@@ -6,50 +6,13 @@ import doublechocolatecinnamonroll from './assets/img/double-chocolate-cinnamon-
 import strawberrycinnamonroll from './assets/img/strawberry-cinnamon-roll.jpg';
 
 import './App.css';
-import Roll from './Roll.js'
-import Nav from './Nav.js'
+
+import Index from './views/home/Index.js'
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-
-    <div className="gallery">
-        <div className="item-row">
-             <Roll
-                imageURL={originalcinnamonroll}
-                itemName="Original cinnamon roll"
-                itemPrice="$ 2.49" 
-             />
-             <Roll
-                imageURL={applecinnamonroll}
-                itemName="Apple cinnamon roll"
-                itemPrice="$ 3.49" 
-             />
-             <Roll
-                imageURL={raisincinnamonroll}
-                itemName="Raisin cinnamon roll"
-                itemPrice="$ 2.99" 
-             />
-          </div>
-        <div className="item-row">
-             <Roll
-                imageURL={walnutcinnamonroll}
-                itemName="Walnut cinnamon roll"
-                itemPrice="$ 3.49" 
-             />
-             <Roll
-                imageURL={doublechocolatecinnamonroll}
-                itemName="Double Chocolate cinnamon roll"
-                itemPrice="$ 3.99" 
-             />
-             <Roll
-                imageURL={strawberrycinnamonroll}
-                itemName="Strawberry cinnamon roll"
-                itemPrice="$ 3.99" 
-             />
-          </div>
-    </div>
+      <Index />
 
     </div>
   );
