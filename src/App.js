@@ -1,67 +1,50 @@
-import logo from './assets/img/logo-01.svg';
+import originalcinnamonroll from './assets/img/original-cinnamon-roll.jpg';
+import applecinnamonroll from './assets/img/apple-cinnamon-roll.jpg';
+import raisincinnamonroll from './assets/img/raisin-cinnamon-roll.jpg';
+import walnutcinnamonroll from './assets/img/walnut-cinnamon-roll.jpg';
+import doublechocolatecinnamonroll from './assets/img/double-chocolate-cinnamon-roll.jpg';
+import strawberrycinnamonroll from './assets/img/strawberry-cinnamon-roll.jpg';
+
 import './App.css';
 import Roll from './Roll.js'
+import Nav from './Nav.js'
 
 function App() {
   return (
     <div className="App">
-      <div className="navcontainer"> 
-
-      <div className="logo">
-        <img className="logo-thumbnail" src={logo} alt="Logo icon"/>
-      </div>
-
-      <div className="nav">
-        <div className="pages">
-          <p className="nav-items">PRODUCTS</p>
-          <p className="nav-items">CART</p>
-        </div>
-
-        <div>
-          <hr/>
-        </div>
-        
-        <div className="phrase">
-          <p>
-              Our hand-made cinnamon rolls
-          </p>
-        </div>
-      </div>
-
-    </div>
-
+      <Nav />
 
     <div className="gallery">
         <div className="item-row">
              <Roll
-                imageURL="/original-cinnamon-roll.jpg"
+                imageURL={originalcinnamonroll}
                 itemName="Original cinnamon roll"
                 itemPrice="$ 2.49" 
              />
              <Roll
-                imageURL="/apple-cinnamon-roll.jpg"
+                imageURL={applecinnamonroll}
                 itemName="Apple cinnamon roll"
                 itemPrice="$ 3.49" 
              />
              <Roll
-                imageURL="/raisin-cinnamon-roll.jpg"
+                imageURL={raisincinnamonroll}
                 itemName="Raisin cinnamon roll"
                 itemPrice="$ 2.99" 
              />
           </div>
         <div className="item-row">
              <Roll
-                imageURL="/walnut-cinnamon-roll.jpg"
+                imageURL={walnutcinnamonroll}
                 itemName="Walnut cinnamon roll"
                 itemPrice="$ 3.49" 
              />
              <Roll
-                imageURL="/double-chocolate-cinnamon-roll.jpg"
-                itemName="DoubleChocolate cinnamon roll"
+                imageURL={doublechocolatecinnamonroll}
+                itemName="Double Chocolate cinnamon roll"
                 itemPrice="$ 3.99" 
              />
              <Roll
-                imageURL="/strawberry-cinnamon-roll.jpg"
+                imageURL={strawberrycinnamonroll}
                 itemName="Strawberry cinnamon roll"
                 itemPrice="$ 3.99" 
              />
